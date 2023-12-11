@@ -1,7 +1,6 @@
 # Stylish-portfolio
 Discover a sleek portfolio website crafted with HTML and CSS, featuring a stylish sidebar menu, responsive design, and engaging sections. No JavaScript or Bootstrap—just clean code for optimal performance. Showcase your projects effortlessly. #WebDevelopment #Portfolio.
 
-Stylish Portfolio Website
 Welcome to my stylish portfolio website! This project showcases a clean and modern design, carefully crafted without relying on JavaScript or Bootstrap. The entire website is built using HTML and CSS, demonstrating a commitment to simplicity and performance.
 
 Technologies Used:
