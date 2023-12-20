@@ -121,14 +121,16 @@ body,ul,h1{
 }
 
 .home-section{
-    background-image: url('/Assets/images/portfolio.jpg');
+    background-image: url('https://live.staticflickr.com/65535/53410037214_c2664becd5_b.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
 }
 .home-content{
     margin-left: 30px;
@@ -253,9 +255,10 @@ body,ul,h1{
 }
 .cards-container{
     display: flex;
+    justify-content: center;
 }
 .welcome-section{
-    background-image: url(Assets/images/image2.jpg);
+    background-image: url('https://live.staticflickr.com/65535/53409880138_ab46afd4d0_b.jpg');
     background-size: cover;
    
     padding-top: 20vh;
@@ -275,24 +278,25 @@ body,ul,h1{
 
 .portfolio-section{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding-top: 150px;
     padding-bottom: 150px;
 }
-.portfolio-section h1{
+
+.portfolio-container h1{
     font-size: 75px;
 
     
 }
-.portfolio-section h2{
+.portfolio-container h2{
     color: rgb(223, 192, 38);
     margin-bottom: 0px;
 }
-
+.portfolio-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 .project-container {
     display: flex;
     position: relative;
@@ -448,10 +452,8 @@ iframe{
 
 
 
-@media (min-width:576px){
-    .home-section{
-        height: 100vh;
-    }
+@media (min-width:320px) and (max-width:479px){
+    
     .home-content{
         margin-left: 20px;
         margin-right: 20px;
@@ -471,14 +473,23 @@ iframe{
     .cards-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; /* Center the cards in a column */
+        justify-content: center; 
     }
 
     .service-card {
-        width: 100%; /* Full width for each card */
-        margin: 10px 0; /* Add some margin between cards */
+        width: 100%; 
+        margin: 10px 0; 
     }
-
+    .services-container{
+        margin: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+       
+    }
+    .portfolio-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .portfolio-section h2{
         font-size: 12px;
     }
@@ -488,12 +499,12 @@ iframe{
     }
     .project-container,
     .project-container1 {
-        flex-direction: column; /* Change to column layout on screens wider than 576px */
+        flex-direction: column; 
     }
 
     .overlay:hover,
     .project-card:hover {
-        clip-path: none; /* Disable clip-path on hover for screens wider than 576px */
+        clip-path: none;
     }
     .project-content{
         margin: 5px;
@@ -508,20 +519,21 @@ iframe{
 } 
 
 
-@media (min-width:768px) {
+@media (min-width:480px) and (max-width:990px) {
     .home-section{
-        height: 73vh
+        padding-top: 7rem;
+        padding-bottom:8rem ;
     }
     .home-content{
-        margin-left: ;
-        margin-right: ;
+        margin-left: 0px;
+        margin-right: 0px;
         
     }
     .home-heading{
         font-size: 60px;
     }
     .home-para{
-        font-size: 25px;
+        font-size: 20px;
     }
     .about-section{
         padding-top: 20vh;
@@ -535,8 +547,8 @@ iframe{
     }
 
     .service-card {
-        width: 40%; /* Set to 48% to allow some space between cards */
-        margin-bottom: 20px; /* Add some margin between cards */
+        width: 40%; 
+        margin-bottom: 20px; 
     }
 
     .portfolio-section h2{
@@ -546,17 +558,30 @@ iframe{
         font-size: 45px;
         
     }
- 
+    
     .overlay:hover,
     .project-card:hover {
-        clip-path: none; /* Disable clip-path on hover for screens wider than 768px */
+        clip-path: none; 
+    }
+    .project-container,
+    .project-container1 {
+        flex-direction: column;
+    }
+
+    .overlay:hover,
+    .project-card:hover {
+        clip-path: none; 
+    }
+    .project-content{
+        margin: 5px;
     }
     .project-card{
         margin-bottom: 20px;
     }
 }
 
-@media (min-width:992px){
+@media (min-width:991px){
+    
     .home-section{
         height: 100vh;
         
