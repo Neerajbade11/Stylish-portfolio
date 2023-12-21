@@ -470,6 +470,9 @@ iframe{
         padding-bottom: 20vh;
        
     }
+    .about-container{
+        margin: 0px;
+    }
     .cards-container {
         display: flex;
         flex-wrap: wrap;
