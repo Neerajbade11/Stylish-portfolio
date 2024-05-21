@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,18 +34,18 @@
             </ul>
         </nav>
 
-    <a class="back-btn" href="#content">
+    <a class="back-btn" href="#content" id="backTopButton">
         <button class="chevron-btn"><i class="fa-solid fa-chevron-up"></i></button>
     </a>
     
-    <header class="home-section" id="Home">
+    <section class="home-section" id="Home">
             <div class="home-content">
                 <h1 class="home-heading">Stylish Portfolio</h1>
                  <p class="home-para">A Free Bootstrap Theme by Start Bootstrap</p>
                <button class="btn">Find Out More</button>
 
             </div>
-    </header>
+    </section>
     
     <section class="about-section" id="About">
         <div class="about-container">
@@ -131,7 +131,7 @@
                                 <p>A yellow pencil with envelopes on a clean, blue backdrop!</p>
                             </div>
                         </div>
-                        <img class="card-img" src="https://live.staticflickr.com/65535/53408782757_a0652e2fcf_b.jpg" alt="Stationary Image">
+                        <img class="card-img" src="Assets/images/stationary.jpg" alt="Stationary Image">
                     </a>
     
                     <a class="project-card">
@@ -141,7 +141,7 @@
                                 <p>A dark blue background with a colored pencil,a clip and a tiny ice cream cone!</p>
                             </div>
                         </div>
-                        <img class="card-img" src="https://live.staticflickr.com/65535/53410147440_3aaee77b34_b.jpg" alt="Stationary Image">
+                        <img class="card-img" src="Assets/images/icecream.jpg" alt="icecream Image">
                     </a>
                 </div>
                 
@@ -150,11 +150,11 @@
                     <a class="project-card">
                         <div class="overlay">
                             <div class="project-content">
-                                <h6>STRAWBERRRIES</h6>
+                                <h6>STRAWBERRIES</h6>
                                 <p>Strawberries are such a tasty snack, especially with a little sugar on top!</p>
                             </div>
                         </div>
-                        <img class="card-img" src="https://live.staticflickr.com/65535/53408783977_4c6869afa1_b.jpg" alt="Stationary Image">
+                        <img class="card-img" src="Assets/images/starwberry.jpg" alt="starwberry Image">
                     </a>
     
                     <a class="project-card">
@@ -164,7 +164,7 @@
                                 <p>A yellow workspace with some scissors,pencils,and other objects!</p>
                             </div>
                         </div>
-                        <img class="card-img" src="https://live.staticflickr.com/65535/53409879308_331c3fab8d_b.jpg" alt="Stationary Image">
+                        <img class="card-img" src="Assets/images/workspace.jpg" alt="workspace Image">
                     </a>
                
                 
@@ -209,7 +209,20 @@
               
         </footer>
     
-    
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const backBtnEl = document.getElementById('backTopButton')
+
+                window.addEventListener('scroll', ()=>{
+                    if(window.scrollY >300){
+                        backBtnEl.style.display= 'block';
+                    }else{
+                        backBtnEl.style.display= 'none'
+                    }
+                })
+            })
+            
+            </script>
     </div>
     
 
